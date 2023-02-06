@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green-Day</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a4eb9d04ce.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
+</head>
+
+<body>
+    <!----------------- Navigation-Bar ------------------->
+
+    <section id="top">
+        <nav class="navigation">
+            <div class="nav-brand">Green-Day</div>
+            <div class="nav-linkss" id="Nav-Linkss">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="#" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About-Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Project</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!---------------- Background-Carousel ------------------>
+    </section>
+    <!----------------------- About-Us-Section --------------------->
+    <section id="about-us" class="py-10">
+        <div class="about-text px-5">
+            <span>About Us</span>
+            <h2>Natural And Organic</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente numquam quibusdam nulla atque suscipit
+                totam at doloremque cupiditate magni repudiandae aperiam possimus doloribus fugit, repellat explicabo
+                saepe commodi tempore expedita
+            </p>
+            <div class="anchor py-5">
+                <a href="#" class="button">Learn More</a>
+            </div>
+        </div>
+        <div class="about-img">
+            <img src="pictures/about.jpg" alt="" class="about-1">
+            <img src="pictures/about-2.jpg" alt="" class="about-2">
+        </div>
+    </section>
+    <!------------------------ Service-Section ---------------------->
+    <section class="py-10 mx-auto w-100 service">
+        <div class="grid col-1 lg-col-2">
+            <div class="service-img px-5">
+                <img src="pictures/service.jpg" alt="" class="img-s">
+            </div>
+            <div class="about-text px-5 py-5">
+                <span>Service</span>
+                <h2>Services We Provide</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum amet harum sit laudantium quis, rem
+                    veritatis voluptatem omnis totam eius ipsa, reprehenderit earum sunt!</p>
+                <div class="anchor py-5">
+                    <a href="#" class="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------ Card-Area---------------------->
+    <section class="w-100 mx-auto py-10 card-area px-5">
+        <div class="grid col-1 lg-col-4">
+            <div class="bg-green card-box">
+                <div class="card px-5 py-5">
+                    <span class="font-xl py-2 d-block text-green"><i class="fa fa-hat-cowboy"></i></span>
+                    <h2 class="text-green">Landscape Caring</h2>
+                    <p class="text-grey py-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id iste aliquid
+                        quis maxime dignissimos molestias est ad culpa a! Nulla.</p>
+                </div>
+            </div>
+            <div class="bg-green-2 card-box">
+                <div class="card px-5 py-5">
+                    <span class="font-xl py-2 text-green d-block"><i class="fa fa-tree"></i></span>
+                    <h2 class="text-green">New Trees Planting</h2>
+                    <p class="text-grey py-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id iste aliquid
+                        quis maxime dignissimos molestias est ad culpa a! Nulla.</p>
+                </div>
+            </div>
+            <div class="bg-green card-box">
+                <div class="card px-5 py-5">
+                    <span class="font-xl py-2 text-green d-block"><i class="fa fa-water"></i></span>
+                    <h2 class="text-green">Watering Gardens</h2>
+                    <p class="text-grey py-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id iste aliquid
+                        quis maxime dignissimos molestias est ad culpa a! Nulla.</p>
+                </div>
+            </div>
+            <div class="bg-green-2 card-box">
+                <div class="card px-5 py-5">
+                    <span class="font-xl py-2 text-green d-block"><i class="fa fa-paw"></i></span>
+                    <h2 class="text-green">Design And Planning</h2>
+                    <p class="text-grey py-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id iste aliquid
+                        quis maxime dignissimos molestias est ad culpa a! Nulla.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------ Counting-Area ------------------->
+    <section class="counting mx-auto w-100 py-10">
+        <div class="counter-up flex">
+            <div class="content w-100 flex">
+                <div class="box flex">
+                    <div class="icon"><i class="fa fa-award"></i></div>
+                    <div class="counter">12</div>
+                    <div class="text">Awards</div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-cart-shopping"></i></div>
+                    <div class="counter">2000</div>
+                    <div class="text">Products</div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-heart"></i></div>
+                    <div class="counter">679</div>
+                    <div class="text">Happy Clients</div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-user"></i></div>
+                    <div class="counter">120</div>
+                    <div class="text">Farmers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------- Recent-Works---------------------->
+    <section class="recent py-10 container mx-auto ">
+        <div class="recent-text py-10 ">
+            <span>Recent Wokrs</span>
+            <h2>Our focus is to provide quality service</h2>
+        </div>
+        <div class="work-box grid col-1 lg-col-3">
+            <div class="single-work">
+                <img src="pictures/boxx.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="work-name">
+                    <h3>Grapes</h3>
+                </div>
+            </div>
+            <div class="single-work">
+                <img src="pictures/boxx-2.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="work-name">
+                    <h3>Watermelon</h3>
+                </div>
+            </div>
+            <div class="single-work">
+                <img src="pictures/boxx-3.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="work-name">
+                    <h3>Strawberry</h3>
+                </div>
+            </div>
+            <div class="single-work">
+                <img src="pictures/boxx-4.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="work-name">
+                    <h3>Banana</h3>
+                </div>
+            </div>
+            <div class="single-work">
+                <img src="pictures/boxx-5.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="work-name">
+                    <h3>Orange</h3>
+                </div>
+            </div>
+            <div class="single-work">
+                <img src="pictures/boxx-6.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="work-name">
+                    <h3>Mango</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------- Our-Team ------------------------->
+    <section class="container mx-auto py-10 team">
+        <div class="recent-text py-10 ">
+            <span>Our Team</span>
+            <h2>We have experienced people in this field</h2>
+        </div>
+        <div class="containerr grid lg-col-4 col-1">
+            <div class="card">
+                <div class="content">
+                    <div class="img-box">
+                        <img src="pictures/testi.jpg" alt="">
+                    </div>
+                    <div class="contentbx py-2">
+                        <h3>Arya Stark</h3>
+                        <h5 class="text-green">Creative Designer</h5>
+                    </div>
+                </div>
+                <div class="soc">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-box">
+                        <img src="pictures/testi-2.jpg" alt="">
+                    </div>
+                    <div class="contentbx py-2">
+                        <h3>Ramsy Bolton</h3>
+                        <h5 class="text-green">Dog Lover</h5>
+                    </div>
+                </div>
+                <div class="soc">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-box">
+                        <img src="pictures/testi-3.jpg" alt="">
+                    </div>
+                    <div class="contentbx py-2">
+                        <h3>Robb Stark</h3>
+                        <h5 class="text-green">Farming Expert</h5>
+                    </div>
+                </div>
+                <div class="soc">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="img-box">
+                        <img src="pictures/testi-2.jpg" alt="">
+                    </div>
+                    <div class="contentbx py-2">
+                        <h3>John Snow</h3>
+                        <h5 class="text-green">Winter Farming Ex</h5>
+                    </div>
+                </div>
+                <div class="soc">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------- Ready-Area ----------------------->
+    <section class="container py-5 mx-auto ready">
+       <div class="flex flex-wrap btn-shadow py-5">
+         <div class="w-50 px-5 col-1">
+            <h1 class="font-xl text-sm-xl text-green py-2">Ready To Work With Us</h1>
+            <p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repudiandae nemo magnam doloribus consectetur alias, consequatur corporis in vero officia?</p>
+         </div>
+         <div class=" py-10 px-5">
+            <a href="#" class="button">Get Started</a>
+         </div>
+       </div>
+    </section>
+
+    <footer>
+        <section class="container mx-auto py-10">
+            <div class="grid col-1 lg-col-4">
+                <div class="text-center md-text-left">
+                    <span class="">Sector:10,Road:12,<br>Uttara,Dhaka</span>
+                    <span class="d-block">+01910101010</span>
+                    <span class="text-green">alfattahsusti@gmail.com</span>
+                </div>
+                <div class="text-center  md-text-left">
+                    <h3 class="text-green">About</h3>
+                    <div class="py-5">
+                        <a href="#" class="d-block">
+                            <span class="">About-Us</span>
+                        </a>
+                        <a href="#" class="d-block">
+                            <span class="">Blog</span>
+                        </a>
+                        <a href="#" class="d-block">
+                            <span class="">Portfolio</span>
+                        </a>
+                        <a href="#" class="d-block">
+                            <span class="">Carrears</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center md-text-left">
+                    <h3 class="text-green">Services</h3>
+                    <div class="py-5">
+                        <a href="#" class="d-block">
+                            <span class="">Farming</span>
+                        </a>
+                        <a href="#" class="d-block">
+                            <span class="">Watering</span>
+                        </a>
+                        <a href="#" class="d-block">
+                            <span class="">Fence</span>
+                        </a>
+                        <a href="#" class="d-block">
+                            <span class="">Barn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center  md-text-left">
+                    <h3 class="text-green">NewsLatter</h3>
+                    <p class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, rerum.</p>
+                    <div class="flex py-2">
+                        <input type="text" class="input-text" placeholder="Enter-Your-Email">
+                        <button class="bton">Go</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-green text-md copy py-5">@all rights reserved to alfattah ishti</div>
+        </section>
+    </footer>
+
+    <!------------------- JavScript ------------------->
+    <script>
+        var navLink = document.getElementById("Nav-Linkss")
+        function showMenu() {
+            navLink.style.top = "0"
+        }
+        function hideMenu() {
+            navLink.style.top = "-350px"
+        }
+
+        $(document).ready(function () {
+            $(".counter").counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+    </script>
+</body>
+
+</html>
